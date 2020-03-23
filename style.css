@@ -51,6 +51,10 @@ body {
     background-color: #4CAF50;
 }
 
+.query-box .result .avid {
+    user-select: all;
+}
+
 .query-box .warning p {
     padding-top: 15px;
     border-top: solid 1px #CCC;
