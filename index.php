@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>通过 BVID 获取 AVID</title>
+    <title>AV号与BV号互转</title>
     <link rel="stylesheet" href="style.css" />
     <!-- 作者：Frost-ZX -->
+    <!-- API 来源：bilibili -->
 </head>
 <body>
     <div class="query-box">
         <div class="input">
-            <label for="query-box-input">BVID（不带“BV”）：</label>
-            <input type="text" id="query-box-input" />
+            <label for="query-box-input">ID：</label>
+            <input type="text" id="query-box-input" placeholder="不带“AV”或“BV”" />
         </div>
         <div class="btn-submit">
-            <div>查询</div>
+            <h4>方式一</h4>
+            <div class="btn" name="a_getav">查询 AV 号</div>    
+            <div class="btn" name="a_getbv">查询 BV 号</div>
+            <h4>方式二</h4>
+            <div class="btn" name="b_getav">查询 AV 号</div>
         </div>
         <div class="result">
             <span class="avid">
-                <!-- 在此修改调用的 PHP -->
-                结果：<?php include 'getavid_a.php'?>
+                结果：<?php include 'getid.php'?>
             </span>
         </div>
         <div class="warning">
